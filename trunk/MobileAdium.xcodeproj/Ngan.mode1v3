@@ -232,6 +232,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -268,13 +270,11 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateExpansionKey</key>
 							<array>
 								<string>29B97314FDCFA39411CA2CEA</string>
-								<string>29B97317FDCFA39411CA2CEA</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>7</integer>
 									<integer>3</integer>
 									<integer>0</integer>
 								</array>
@@ -315,7 +315,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ApplicationController.m</string>
+								<string>aim.png</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -323,11 +323,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>ApplicationController.m</string>
+										<string>aim.png</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>4BC652270DC0EC7A0093F33C</string>
+										<string>4B7AF5CE0DC0EDF100FD1C14</string>
 										<key>history</key>
 										<array>
 											<string>4B4AE7E10DC0EB000095A099</string>
@@ -341,11 +341,12 @@
 											<string>4B4AE7FF0DC0EB5E0095A099</string>
 											<string>4B4AE8000DC0EB5E0095A099</string>
 											<string>4BC6521A0DC0EC7A0093F33C</string>
-											<string>4BC6521B0DC0EC7A0093F33C</string>
 											<string>4BC6521C0DC0EC7A0093F33C</string>
 											<string>4BC6521D0DC0EC7A0093F33C</string>
 											<string>4BC6521E0DC0EC7A0093F33C</string>
-											<string>4BC6521F0DC0EC7A0093F33C</string>
+											<string>4B7AF5C90DC0EDF100FD1C14</string>
+											<string>4B7AF5CA0DC0EDF100FD1C14</string>
+											<string>4B7AF5CB0DC0EDF100FD1C14</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -364,10 +365,8 @@
 											<string>4BC652200DC0EC7A0093F33C</string>
 											<string>4BC652210DC0EC7A0093F33C</string>
 											<string>4BC652220DC0EC7A0093F33C</string>
-											<string>4BC652230DC0EC7A0093F33C</string>
-											<string>4BC652240DC0EC7A0093F33C</string>
-											<string>4BC652250DC0EC7A0093F33C</string>
-											<string>4BC652260DC0EC7A0093F33C</string>
+											<string>4B7AF5CC0DC0EDF100FD1C14</string>
+											<string>4B7AF5CD0DC0EDF100FD1C14</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -389,8 +388,6 @@
 							<string>230pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -427,9 +424,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>4BC652280DC0EC7A0093F33C</string>
+				<string>4B7AF5CF0DC0EDF100FD1C14</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>4BC652290DC0EC7A0093F33C</string>
+				<string>4B7AF5D00DC0EDF100FD1C14</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -563,9 +560,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1C78EAAD065D492600B07095</string>
-		<string>1CD10A99069EF8BA00B06720</string>
-		<string>4BC6520C0DC0EBF40093F33C</string>
 		<string>/Users/Ngan/Projects/iPhone/MobileAdium/MobileAdium.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
