@@ -1,0 +1,340 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* MobileAdiumAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* MobileAdiumAppDelegate.m */; };
+		1D3623EC0D0F72F000981E51 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D3623EB0D0F72F000981E51 /* CoreGraphics.framework */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		4B4AE7D90DC0EAC70095A099 /* ApplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4AE7D10DC0EAC70095A099 /* ApplicationController.m */; };
+		4B4AE7DA0DC0EAC70095A099 /* AccountsNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4AE7D20DC0EAC70095A099 /* AccountsNavigationController.m */; };
+		4B4AE7DB0DC0EAC70095A099 /* AccountsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4AE7D30DC0EAC70095A099 /* AccountsController.m */; };
+		4B4AE7DC0DC0EAC70095A099 /* ConversationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4AE7D40DC0EAC70095A099 /* ConversationController.m */; };
+		4B4AE7DD0DC0EAC70095A099 /* BuddyListNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4AE7D50DC0EAC70095A099 /* BuddyListNavigationController.m */; };
+		4B4AE7DE0DC0EAC70095A099 /* BuddyListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4AE7D60DC0EAC70095A099 /* BuddyListController.m */; };
+		4B4AE7DF0DC0EAC70095A099 /* ProfileNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4AE7D70DC0EAC70095A099 /* ProfileNavigationController.m */; };
+		4B4AE7E00DC0EAC70095A099 /* SettingsNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4AE7D80DC0EAC70095A099 /* SettingsNavigationController.m */; };
+		4B4AE7F50DC0EB150095A099 /* ApplicationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4AE7F10DC0EB150095A099 /* ApplicationView.m */; };
+		4B4AE7F60DC0EB150095A099 /* ConversationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4AE7F40DC0EB150095A099 /* ConversationView.m */; };
+		4B4AE80D0DC0EB910095A099 /* aim.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B4AE80C0DC0EB910095A099 /* aim.png */; };
+		4B4AE80F0DC0EB960095A099 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B4AE80E0DC0EB960095A099 /* Icon.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* MobileAdiumAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobileAdiumAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* MobileAdiumAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MobileAdiumAppDelegate.m; sourceTree = "<group>"; };
+		1D3623EB0D0F72F000981E51 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1D6058910D05DD3D006BFB54 /* MobileAdium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileAdium.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* MobileAdium_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobileAdium_Prefix.pch; sourceTree = "<group>"; };
+		4B4AE7C90DC0EAC70095A099 /* AccountsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountsController.h; sourceTree = "<group>"; };
+		4B4AE7CA0DC0EAC70095A099 /* AccountsNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountsNavigationController.h; sourceTree = "<group>"; };
+		4B4AE7CB0DC0EAC70095A099 /* ApplicationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationController.h; sourceTree = "<group>"; };
+		4B4AE7CC0DC0EAC70095A099 /* BuddyListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuddyListController.h; sourceTree = "<group>"; };
+		4B4AE7CD0DC0EAC70095A099 /* BuddyListNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuddyListNavigationController.h; sourceTree = "<group>"; };
+		4B4AE7CE0DC0EAC70095A099 /* ConversationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversationController.h; sourceTree = "<group>"; };
+		4B4AE7CF0DC0EAC70095A099 /* ProfileNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileNavigationController.h; sourceTree = "<group>"; };
+		4B4AE7D00DC0EAC70095A099 /* SettingsNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsNavigationController.h; sourceTree = "<group>"; };
+		4B4AE7D10DC0EAC70095A099 /* ApplicationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationController.m; sourceTree = "<group>"; };
+		4B4AE7D20DC0EAC70095A099 /* AccountsNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountsNavigationController.m; sourceTree = "<group>"; };
+		4B4AE7D30DC0EAC70095A099 /* AccountsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountsController.m; sourceTree = "<group>"; };
+		4B4AE7D40DC0EAC70095A099 /* ConversationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversationController.m; sourceTree = "<group>"; };
+		4B4AE7D50DC0EAC70095A099 /* BuddyListNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuddyListNavigationController.m; sourceTree = "<group>"; };
+		4B4AE7D60DC0EAC70095A099 /* BuddyListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuddyListController.m; sourceTree = "<group>"; };
+		4B4AE7D70DC0EAC70095A099 /* ProfileNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileNavigationController.m; sourceTree = "<group>"; };
+		4B4AE7D80DC0EAC70095A099 /* SettingsNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsNavigationController.m; sourceTree = "<group>"; };
+		4B4AE7F10DC0EB150095A099 /* ApplicationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationView.m; sourceTree = "<group>"; };
+		4B4AE7F20DC0EB150095A099 /* ConversationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversationView.h; sourceTree = "<group>"; };
+		4B4AE7F30DC0EB150095A099 /* ApplicationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationView.h; sourceTree = "<group>"; };
+		4B4AE7F40DC0EB150095A099 /* ConversationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversationView.m; sourceTree = "<group>"; };
+		4B4AE80C0DC0EB910095A099 /* aim.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aim.png; sourceTree = "<group>"; };
+		4B4AE80E0DC0EB960095A099 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				1D3623EC0D0F72F000981E51 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4B4AE7C20DC0EA2D0095A099 /* Models */,
+				4B4AE7C30DC0EA330095A099 /* Views */,
+				4B4AE7C40DC0EA3E0095A099 /* Controllers */,
+				1D3623240D0F684500981E51 /* MobileAdiumAppDelegate.h */,
+				1D3623250D0F684500981E51 /* MobileAdiumAppDelegate.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* MobileAdium.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* MobileAdium_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4B4AE80A0DC0EB890095A099 /* Images */,
+				4B4AE80E0DC0EB960095A099 /* Icon.png */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623EB0D0F72F000981E51 /* CoreGraphics.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B4AE7C20DC0EA2D0095A099 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		4B4AE7C30DC0EA330095A099 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4B4AE7F30DC0EB150095A099 /* ApplicationView.h */,
+				4B4AE7F10DC0EB150095A099 /* ApplicationView.m */,
+				4B4AE7F20DC0EB150095A099 /* ConversationView.h */,
+				4B4AE7F40DC0EB150095A099 /* ConversationView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		4B4AE7C40DC0EA3E0095A099 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4B4AE7C90DC0EAC70095A099 /* AccountsController.h */,
+				4B4AE7D30DC0EAC70095A099 /* AccountsController.m */,
+				4B4AE7CA0DC0EAC70095A099 /* AccountsNavigationController.h */,
+				4B4AE7D20DC0EAC70095A099 /* AccountsNavigationController.m */,
+				4B4AE7CB0DC0EAC70095A099 /* ApplicationController.h */,
+				4B4AE7D10DC0EAC70095A099 /* ApplicationController.m */,
+				4B4AE7CC0DC0EAC70095A099 /* BuddyListController.h */,
+				4B4AE7D60DC0EAC70095A099 /* BuddyListController.m */,
+				4B4AE7CD0DC0EAC70095A099 /* BuddyListNavigationController.h */,
+				4B4AE7D50DC0EAC70095A099 /* BuddyListNavigationController.m */,
+				4B4AE7CE0DC0EAC70095A099 /* ConversationController.h */,
+				4B4AE7D40DC0EAC70095A099 /* ConversationController.m */,
+				4B4AE7CF0DC0EAC70095A099 /* ProfileNavigationController.h */,
+				4B4AE7D70DC0EAC70095A099 /* ProfileNavigationController.m */,
+				4B4AE7D00DC0EAC70095A099 /* SettingsNavigationController.h */,
+				4B4AE7D80DC0EAC70095A099 /* SettingsNavigationController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		4B4AE80A0DC0EB890095A099 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				4B4AE80C0DC0EB910095A099 /* aim.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* MobileAdium */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "MobileAdium" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MobileAdium;
+			productName = MobileAdium;
+			productReference = 1D6058910D05DD3D006BFB54 /* MobileAdium.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MobileAdium" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* MobileAdium */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				4B4AE80D0DC0EB910095A099 /* aim.png in Resources */,
+				4B4AE80F0DC0EB960095A099 /* Icon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* MobileAdiumAppDelegate.m in Sources */,
+				4B4AE7D90DC0EAC70095A099 /* ApplicationController.m in Sources */,
+				4B4AE7DA0DC0EAC70095A099 /* AccountsNavigationController.m in Sources */,
+				4B4AE7DB0DC0EAC70095A099 /* AccountsController.m in Sources */,
+				4B4AE7DC0DC0EAC70095A099 /* ConversationController.m in Sources */,
+				4B4AE7DD0DC0EAC70095A099 /* BuddyListNavigationController.m in Sources */,
+				4B4AE7DE0DC0EAC70095A099 /* BuddyListController.m in Sources */,
+				4B4AE7DF0DC0EAC70095A099 /* ProfileNavigationController.m in Sources */,
+				4B4AE7E00DC0EAC70095A099 /* SettingsNavigationController.m in Sources */,
+				4B4AE7F50DC0EB150095A099 /* ApplicationView.m in Sources */,
+				4B4AE7F60DC0EB150095A099 /* ConversationView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MobileAdium_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = MobileAdium;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MobileAdium_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = MobileAdium;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos2.0;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos2.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "MobileAdium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MobileAdium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
