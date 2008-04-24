@@ -182,9 +182,17 @@
 		4B4AE80A0DC0EB890095A099 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				4B4AE80C0DC0EB910095A099 /* aim.png */,
+				4B7AF5C80DC0EDE900FD1C14 /* Services */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		4B7AF5C80DC0EDE900FD1C14 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4B4AE80C0DC0EB910095A099 /* aim.png */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
