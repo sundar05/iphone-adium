@@ -13,6 +13,7 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		4B2848820DC1592F00BCB3D2 /* SQLite3ResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B2848810DC1592F00BCB3D2 /* SQLite3ResultSet.m */; };
 		4B4AE7D90DC0EAC70095A099 /* ApplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4AE7D10DC0EAC70095A099 /* ApplicationController.m */; };
 		4B4AE7DA0DC0EAC70095A099 /* AccountsNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4AE7D20DC0EAC70095A099 /* AccountsNavigationController.m */; };
 		4B4AE7DB0DC0EAC70095A099 /* AccountsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4AE7D30DC0EAC70095A099 /* AccountsController.m */; };
@@ -26,6 +27,7 @@
 		4B4AE80D0DC0EB910095A099 /* aim.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B4AE80C0DC0EB910095A099 /* aim.png */; };
 		4B4AE80F0DC0EB960095A099 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B4AE80E0DC0EB960095A099 /* Icon.png */; };
 		4BA5930D0DC1543800CC131E /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BA5930A0DC1543800CC131E /* sqlite3.c */; };
+		4BA5931A0DC1552A00CC131E /* SQLite3Database.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA593190DC1552A00CC131E /* SQLite3Database.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* MobileAdium_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobileAdium_Prefix.pch; sourceTree = "<group>"; };
+		4B2848800DC1592F00BCB3D2 /* SQLite3ResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLite3ResultSet.h; sourceTree = "<group>"; };
+		4B2848810DC1592F00BCB3D2 /* SQLite3ResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLite3ResultSet.m; sourceTree = "<group>"; };
 		4B4AE7C90DC0EAC70095A099 /* AccountsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountsController.h; sourceTree = "<group>"; };
 		4B4AE7CA0DC0EAC70095A099 /* AccountsNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountsNavigationController.h; sourceTree = "<group>"; };
 		4B4AE7CB0DC0EAC70095A099 /* ApplicationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationController.h; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 		4BA5930A0DC1543800CC131E /* sqlite3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sqlite3.c; sourceTree = "<group>"; };
 		4BA5930B0DC1543800CC131E /* sqlite3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3.h; sourceTree = "<group>"; };
 		4BA5930C0DC1543800CC131E /* sqlite3ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3ext.h; sourceTree = "<group>"; };
+		4BA593180DC1552A00CC131E /* SQLite3Database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLite3Database.h; sourceTree = "<group>"; };
+		4BA593190DC1552A00CC131E /* SQLite3Database.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLite3Database.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,6 +152,10 @@
 		4B4AE7C20DC0EA2D0095A099 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				4BA593180DC1552A00CC131E /* SQLite3Database.h */,
+				4BA593190DC1552A00CC131E /* SQLite3Database.m */,
+				4B2848800DC1592F00BCB3D2 /* SQLite3ResultSet.h */,
+				4B2848810DC1592F00BCB3D2 /* SQLite3ResultSet.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -278,6 +288,8 @@
 				4B4AE7F50DC0EB150095A099 /* ApplicationView.m in Sources */,
 				4B4AE7F60DC0EB150095A099 /* ConversationView.m in Sources */,
 				4BA5930D0DC1543800CC131E /* sqlite3.c in Sources */,
+				4BA5931A0DC1552A00CC131E /* SQLite3Database.m in Sources */,
+				4B2848820DC1592F00BCB3D2 /* SQLite3ResultSet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
