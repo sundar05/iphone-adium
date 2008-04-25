@@ -16,6 +16,7 @@
 	if (self = [super init]) {
 		// Initialize your view controller.
 		self.title = @"Accounts";
+    self.tabBarItem.image = [UIImage imageNamed:@"Accounts.png"];
 	}
 	return self;
 }
