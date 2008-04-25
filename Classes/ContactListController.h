@@ -1,5 +1,5 @@
 //
-//  BuddyListController.h
+//  ContactListController.h
 //  Adium
 //
 //  Created by Ngan Pham on 4/22/08.
@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface BuddyListController : UIViewController {
+@interface ContactListController : UIViewController {
 
 }
 

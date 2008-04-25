@@ -18,8 +18,8 @@
 		4B4AE7DA0DC0EAC70095A099 /* AccountsNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4AE7D20DC0EAC70095A099 /* AccountsNavigationController.m */; };
 		4B4AE7DB0DC0EAC70095A099 /* AccountsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4AE7D30DC0EAC70095A099 /* AccountsController.m */; };
 		4B4AE7DC0DC0EAC70095A099 /* ConversationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4AE7D40DC0EAC70095A099 /* ConversationController.m */; };
-		4B4AE7DD0DC0EAC70095A099 /* BuddyListNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4AE7D50DC0EAC70095A099 /* BuddyListNavigationController.m */; };
-		4B4AE7DE0DC0EAC70095A099 /* BuddyListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4AE7D60DC0EAC70095A099 /* BuddyListController.m */; };
+		4B4AE7DD0DC0EAC70095A099 /* ContactListNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4AE7D50DC0EAC70095A099 /* ContactListNavigationController.m */; };
+		4B4AE7DE0DC0EAC70095A099 /* ContactListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4AE7D60DC0EAC70095A099 /* ContactListController.m */; };
 		4B4AE7DF0DC0EAC70095A099 /* ProfileNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4AE7D70DC0EAC70095A099 /* ProfileNavigationController.m */; };
 		4B4AE7E00DC0EAC70095A099 /* SettingsNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4AE7D80DC0EAC70095A099 /* SettingsNavigationController.m */; };
 		4B4AE7F50DC0EB150095A099 /* ApplicationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4AE7F10DC0EB150095A099 /* ApplicationView.m */; };
@@ -28,6 +28,8 @@
 		4B4AE80F0DC0EB960095A099 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B4AE80E0DC0EB960095A099 /* Icon.png */; };
 		4BA5930D0DC1543800CC131E /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BA5930A0DC1543800CC131E /* sqlite3.c */; };
 		4BA5931A0DC1552A00CC131E /* SQLite3Database.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA593190DC1552A00CC131E /* SQLite3Database.m */; };
+		4BC419770DC276B2002D883F /* Accounts.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BC419760DC276B2002D883F /* Accounts.png */; };
+		4BC419880DC28526002D883F /* Contact List.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BC419870DC28526002D883F /* Contact List.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,8 +47,8 @@
 		4B4AE7C90DC0EAC70095A099 /* AccountsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountsController.h; sourceTree = "<group>"; };
 		4B4AE7CA0DC0EAC70095A099 /* AccountsNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountsNavigationController.h; sourceTree = "<group>"; };
 		4B4AE7CB0DC0EAC70095A099 /* ApplicationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationController.h; sourceTree = "<group>"; };
-		4B4AE7CC0DC0EAC70095A099 /* BuddyListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuddyListController.h; sourceTree = "<group>"; };
-		4B4AE7CD0DC0EAC70095A099 /* BuddyListNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuddyListNavigationController.h; sourceTree = "<group>"; };
+		4B4AE7CC0DC0EAC70095A099 /* ContactListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactListController.h; sourceTree = "<group>"; };
+		4B4AE7CD0DC0EAC70095A099 /* ContactListNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactListNavigationController.h; sourceTree = "<group>"; };
 		4B4AE7CE0DC0EAC70095A099 /* ConversationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversationController.h; sourceTree = "<group>"; };
 		4B4AE7CF0DC0EAC70095A099 /* ProfileNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileNavigationController.h; sourceTree = "<group>"; };
 		4B4AE7D00DC0EAC70095A099 /* SettingsNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsNavigationController.h; sourceTree = "<group>"; };
@@ -54,8 +56,8 @@
 		4B4AE7D20DC0EAC70095A099 /* AccountsNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountsNavigationController.m; sourceTree = "<group>"; };
 		4B4AE7D30DC0EAC70095A099 /* AccountsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountsController.m; sourceTree = "<group>"; };
 		4B4AE7D40DC0EAC70095A099 /* ConversationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversationController.m; sourceTree = "<group>"; };
-		4B4AE7D50DC0EAC70095A099 /* BuddyListNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuddyListNavigationController.m; sourceTree = "<group>"; };
-		4B4AE7D60DC0EAC70095A099 /* BuddyListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuddyListController.m; sourceTree = "<group>"; };
+		4B4AE7D50DC0EAC70095A099 /* ContactListNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactListNavigationController.m; sourceTree = "<group>"; };
+		4B4AE7D60DC0EAC70095A099 /* ContactListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactListController.m; sourceTree = "<group>"; };
 		4B4AE7D70DC0EAC70095A099 /* ProfileNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileNavigationController.m; sourceTree = "<group>"; };
 		4B4AE7D80DC0EAC70095A099 /* SettingsNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsNavigationController.m; sourceTree = "<group>"; };
 		4B4AE7F10DC0EB150095A099 /* ApplicationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationView.m; sourceTree = "<group>"; };
@@ -69,6 +71,8 @@
 		4BA5930C0DC1543800CC131E /* sqlite3ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3ext.h; sourceTree = "<group>"; };
 		4BA593180DC1552A00CC131E /* SQLite3Database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLite3Database.h; sourceTree = "<group>"; };
 		4BA593190DC1552A00CC131E /* SQLite3Database.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLite3Database.m; sourceTree = "<group>"; };
+		4BC419760DC276B2002D883F /* Accounts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Accounts.png; sourceTree = "<group>"; };
+		4BC419870DC28526002D883F /* Contact List.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Contact List.png"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -150,6 +154,48 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4B1242060DC25A4C0063FC57 /* Accounts */ = {
+			isa = PBXGroup;
+			children = (
+				4B4AE7C90DC0EAC70095A099 /* AccountsController.h */,
+				4B4AE7D30DC0EAC70095A099 /* AccountsController.m */,
+				4B4AE7CA0DC0EAC70095A099 /* AccountsNavigationController.h */,
+				4B4AE7D20DC0EAC70095A099 /* AccountsNavigationController.m */,
+			);
+			name = Accounts;
+			sourceTree = "<group>";
+		};
+		4B1242070DC25A600063FC57 /* Contact List */ = {
+			isa = PBXGroup;
+			children = (
+				4B4AE7CE0DC0EAC70095A099 /* ConversationController.h */,
+				4B4AE7D40DC0EAC70095A099 /* ConversationController.m */,
+				4B4AE7CC0DC0EAC70095A099 /* ContactListController.h */,
+				4B4AE7D60DC0EAC70095A099 /* ContactListController.m */,
+				4B4AE7CD0DC0EAC70095A099 /* ContactListNavigationController.h */,
+				4B4AE7D50DC0EAC70095A099 /* ContactListNavigationController.m */,
+			);
+			name = "Contact List";
+			sourceTree = "<group>";
+		};
+		4B1242080DC25A7A0063FC57 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				4B4AE7CF0DC0EAC70095A099 /* ProfileNavigationController.h */,
+				4B4AE7D70DC0EAC70095A099 /* ProfileNavigationController.m */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		4B1242090DC25A940063FC57 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				4B4AE7D00DC0EAC70095A099 /* SettingsNavigationController.h */,
+				4B4AE7D80DC0EAC70095A099 /* SettingsNavigationController.m */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
 		4B2849880DC18BB100BCB3D2 /* libpurple */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,22 +228,12 @@
 		4B4AE7C40DC0EA3E0095A099 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				4B4AE7C90DC0EAC70095A099 /* AccountsController.h */,
-				4B4AE7D30DC0EAC70095A099 /* AccountsController.m */,
-				4B4AE7CA0DC0EAC70095A099 /* AccountsNavigationController.h */,
-				4B4AE7D20DC0EAC70095A099 /* AccountsNavigationController.m */,
 				4B4AE7CB0DC0EAC70095A099 /* ApplicationController.h */,
 				4B4AE7D10DC0EAC70095A099 /* ApplicationController.m */,
-				4B4AE7CC0DC0EAC70095A099 /* BuddyListController.h */,
-				4B4AE7D60DC0EAC70095A099 /* BuddyListController.m */,
-				4B4AE7CD0DC0EAC70095A099 /* BuddyListNavigationController.h */,
-				4B4AE7D50DC0EAC70095A099 /* BuddyListNavigationController.m */,
-				4B4AE7CE0DC0EAC70095A099 /* ConversationController.h */,
-				4B4AE7D40DC0EAC70095A099 /* ConversationController.m */,
-				4B4AE7CF0DC0EAC70095A099 /* ProfileNavigationController.h */,
-				4B4AE7D70DC0EAC70095A099 /* ProfileNavigationController.m */,
-				4B4AE7D00DC0EAC70095A099 /* SettingsNavigationController.h */,
-				4B4AE7D80DC0EAC70095A099 /* SettingsNavigationController.m */,
+				4B1242060DC25A4C0063FC57 /* Accounts */,
+				4B1242070DC25A600063FC57 /* Contact List */,
+				4B1242080DC25A7A0063FC57 /* Profile */,
+				4B1242090DC25A940063FC57 /* Settings */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -205,6 +241,8 @@
 		4B4AE80A0DC0EB890095A099 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				4BC419760DC276B2002D883F /* Accounts.png */,
+				4BC419870DC28526002D883F /* Contact List.png */,
 				4B7AF5C80DC0EDE900FD1C14 /* Services */,
 			);
 			name = Images;
@@ -273,6 +311,8 @@
 				28AD733F0D9D9553002E5188 /* MobileAdium.xib in Resources */,
 				4B4AE80D0DC0EB910095A099 /* aim.png in Resources */,
 				4B4AE80F0DC0EB960095A099 /* Icon.png in Resources */,
+				4BC419770DC276B2002D883F /* Accounts.png in Resources */,
+				4BC419880DC28526002D883F /* Contact List.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,8 +329,8 @@
 				4B4AE7DA0DC0EAC70095A099 /* AccountsNavigationController.m in Sources */,
 				4B4AE7DB0DC0EAC70095A099 /* AccountsController.m in Sources */,
 				4B4AE7DC0DC0EAC70095A099 /* ConversationController.m in Sources */,
-				4B4AE7DD0DC0EAC70095A099 /* BuddyListNavigationController.m in Sources */,
-				4B4AE7DE0DC0EAC70095A099 /* BuddyListController.m in Sources */,
+				4B4AE7DD0DC0EAC70095A099 /* ContactListNavigationController.m in Sources */,
+				4B4AE7DE0DC0EAC70095A099 /* ContactListController.m in Sources */,
 				4B4AE7DF0DC0EAC70095A099 /* ProfileNavigationController.m in Sources */,
 				4B4AE7E00DC0EAC70095A099 /* SettingsNavigationController.m in Sources */,
 				4B4AE7F50DC0EB150095A099 /* ApplicationView.m in Sources */,

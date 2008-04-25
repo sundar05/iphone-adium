@@ -7,7 +7,7 @@
 //
 
 #import "ApplicationController.h"
-#import "BuddyListNavigationController.h"
+#import "ContactListNavigationController.h"
 #import "AccountsNavigationController.h"
 #import "ProfileNavigationController.h"
 #import "SettingsNavigationController.h"
@@ -15,7 +15,7 @@
 @implementation ApplicationController
 
 @synthesize accountsNavigationController;
-@synthesize buddyListNavigationController;
+@synthesize contactListNavigationController;
 @synthesize profileNavigationController;
 @synthesize settingsNavigationController;
 
@@ -24,6 +24,7 @@
 	if (self = [super init]) {
 		// Initialize your application controller.
 		self.title = @"ApplicationController";
+    [self initializeDatabase];
 		[self initializeCoreControllers];
 	}
 	return self;
@@ -44,13 +45,16 @@
 - (void)initializeCoreControllers {
 	// initialize core controllers
 	accountsNavigationController = [[[AccountsNavigationController alloc] init] autorelease];
-	buddyListNavigationController = [[[BuddyListNavigationController alloc] init] autorelease];
+	contactListNavigationController = [[[ContactListNavigationController alloc] init] autorelease];
 	//profileNavigationController = [[[ProfileNavigationController alloc] init] autorelease];
 	//settingsNavigationController = [[[SettingsNavigationController alloc] init] autorelease];
 
 	// assign array to viewControllers
-	//self.viewControllers = [NSArray arrayWithObjects:accountsNavigationController, buddyListNavigationController, profileNavigationController, settingsNavigationController, nil];
-	self.viewControllers = [NSArray arrayWithObjects:accountsNavigationController, buddyListNavigationController, nil];
+	//self.viewControllers = [NSArray arrayWithObjects:accountsNavigationController, contactListNavigationController, profileNavigationController, settingsNavigationController, nil];
+  self.viewControllers = [NSArray arrayWithObjects:accountsNavigationController, contactListNavigationController, nil];
+}
+
+- (void)initializeDatabase {
 }
 
 - (void)dealloc

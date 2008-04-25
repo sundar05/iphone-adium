@@ -17,7 +17,6 @@
 {
 	if (self = [super init]) {
 		// Initialize your view controller.
-		self.title = @"AccountsNavigationController";
 		[self initializeRootController];
 	}
 	return self;
@@ -39,7 +38,6 @@
 {
 	accountsController = [[[AccountsController alloc] init] autorelease];
 	[self pushViewController:accountsController animated:NO];
-
 }
 
 - (void)dealloc
