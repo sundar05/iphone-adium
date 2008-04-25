@@ -21,10 +21,7 @@
 	
   // instantiate the application controller
   applicationController = [[ApplicationController alloc] init];
-	
-  // set up the application controller
-  applicationController = [[ApplicationController alloc] init];
-	
+  
   // add the application controller's view to the window and make it visible
   [window addSubview:applicationController.view];
 	[window makeKeyAndVisible];
