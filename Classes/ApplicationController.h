@@ -11,10 +11,10 @@
 @class AccountsNavigationController, BuddyListNavigationController, ProfileNavigationController, SettingsNavigationController;
 
 @interface ApplicationController : UITabBarController {
-	IBOutlet AccountsNavigationController *accountsNavigationController;
+  IBOutlet AccountsNavigationController *accountsNavigationController;
   IBOutlet BuddyListNavigationController *buddyListNavigationController;
-	IBOutlet ProfileNavigationController *profileNavigationController;
-	IBOutlet SettingsNavigationController *settingsNavigationController;
+  IBOutlet ProfileNavigationController *profileNavigationController;
+  IBOutlet SettingsNavigationController *settingsNavigationController;
 }
 
 @property (nonatomic, retain) AccountsNavigationController *accountsNavigationController;
