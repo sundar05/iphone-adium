@@ -11,11 +11,11 @@
 
 @implementation SQLite3Database
 
-+ (id)databaseWithPath:(NSString*)aPath {
++ (id)databaseWithPath:(NSString *)aPath {
     return [[[SQLite3Database alloc] initWithPath:aPath] autorelease];
 }
 
-- (id)initWithPath:(NSString*)aPath {
+- (id)initWithPath:(NSString *)aPath {
     self = [super init];
 	
     if (self) {
@@ -35,11 +35,11 @@
 	[super dealloc];
 }
 
-+ (NSString*) sqliteLibVersion {
++ (NSString *) sqliteLibVersion {
     return [NSString stringWithFormat:@"%s", sqlite3_libversion()];
 }
 
-- (sqlite3*) sqliteHandle {
+- (sqlite3 *) sqliteHandle {
     return db;
 }
 
@@ -81,7 +81,7 @@
 }
 #ifdef I_HAS_SQLITE_ENCRYPTIONZ
 
-- (BOOL) rekey:(NSString*)key {
+- (BOOL) rekey:(NSString *)key {
     
     if (!key) {
         return NO;
@@ -97,7 +97,7 @@
     return (rc == SQLITE_OK);
 }
 
-- (BOOL) setKey:(NSString*)key {
+- (BOOL) setKey:(NSString *)key {
     if (!key) {
         return NO;
     }
@@ -132,7 +132,7 @@
     
 }
 
-- (NSString*) lastErrorMessage {
+- (NSString *) lastErrorMessage {
     return [NSString stringWithUTF8String:sqlite3_errmsg(db)];
 }
 
@@ -159,7 +159,7 @@
     return ret;
 }
 
-- (void) bindObject:(id)obj toColumn:(int)idx inStatement:(sqlite3_stmt*)pStmt; {
+- (void) bindObject:(id)obj toColumn:(int)idx inStatement:(sqlite3_stmt *)pStmt; {
     
     // FIXME - someday check the return codes on these binds.
     if ([obj isKindOfClass:[NSData class]]) {
@@ -191,7 +191,7 @@
     }
 }
 
-- (id) executeQuery:(NSString*)objs, ... {
+- (id) executeQuery:(NSString *)objs, ... {
     
     if (inUse) {
         [self compainAboutInUse];
@@ -279,7 +279,7 @@
 }
 
 
-- (BOOL) executeUpdate:(NSString*)objs, ... {
+- (BOOL) executeUpdate:(NSString *)objs, ... {
     
     if (inUse) {
         [self compainAboutInUse];
