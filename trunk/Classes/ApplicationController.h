@@ -8,17 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@class BuddyListNavigationController, AccountsNavigationController, ProfileNavigationController, SettingsNavigationController;
+@class AccountsNavigationController, BuddyListNavigationController, ProfileNavigationController, SettingsNavigationController;
 
 @interface ApplicationController : UITabBarController {
-	BuddyListNavigationController *buddyListNavigationController;
-	AccountsNavigationController *accountsNavigationController;
-	ProfileNavigationController *profileNavigationController;
-	SettingsNavigationController *settingsNavigationController;
+	IBOutlet AccountsNavigationController *accountsNavigationController;
+  IBOutlet BuddyListNavigationController *buddyListNavigationController;
+	IBOutlet ProfileNavigationController *profileNavigationController;
+	IBOutlet SettingsNavigationController *settingsNavigationController;
 }
 
-@property (nonatomic, retain) BuddyListNavigationController *buddyListNavigationController;
 @property (nonatomic, retain) AccountsNavigationController *accountsNavigationController;
+@property (nonatomic, retain) BuddyListNavigationController *buddyListNavigationController;
 @property (nonatomic, retain) ProfileNavigationController *profileNavigationController;
 @property (nonatomic, retain) SettingsNavigationController *settingsNavigationController;
 
