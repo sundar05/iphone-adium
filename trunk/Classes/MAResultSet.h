@@ -1,5 +1,5 @@
 //
-//  SQLite3ResultSet.h
+//  MAResultSet.h
 //  MobileAdium
 //
 //  Created by Ngan Pham on 4/24/08.
@@ -9,17 +9,17 @@
 #import <UIKit/UIKit.h>
 #import "sqlite3.h"
 
-@class SQLite3Database;
+@class MADatabase;
 
-@interface SQLite3ResultSet : NSObject {
-  SQLite3Database *parentDB;
+@interface MAResultSet : NSObject {
+  MADatabase *parentDB;
   sqlite3_stmt *pStmt;
   NSString *query;
   NSMutableDictionary *columnNameToIndexMap;
   BOOL columnNamesSetup;
 }
 
-+ (id) resultSetWithStatement:(sqlite3_stmt *)stmt usingParentDatabase:(SQLite3Database *)aDB;
++ (id) resultSetWithStatement:(sqlite3_stmt *)stmt usingParentDatabase:(MADatabase *)aDB;
 
 - (void) close;
 
@@ -27,7 +27,7 @@
 - (void)setQuery:(NSString *)value;
 
 - (void)setPStmt:(sqlite3_stmt *)newsqlite3_stmt;
-- (void)setParentDB:(SQLite3Database *)newDb;
+- (void)setParentDB:(MADatabase *)newDb;
 
 - (BOOL) next;
 
