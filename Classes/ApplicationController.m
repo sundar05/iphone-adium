@@ -11,9 +11,11 @@
 #import "AccountsNavigationController.h"
 #import "ProfileNavigationController.h"
 #import "SettingsNavigationController.h"
-#import "SQLite3Database.h"
+#import "MADatabase.h"
 
 @implementation ApplicationController
+
+static MADatabase *applicationDatabase;
 
 @synthesize accountsNavigationController;
 @synthesize contactListNavigationController;
@@ -25,7 +27,7 @@
 	if (self = [super init]) {
 		// Initialize your application controller.
 		self.title = @"ApplicationController";
-    [self initializeDatabase];
+    [self initializeApplicationDatabase];
 		[self initializeNavigationControllers];
 	}
 	return self;
@@ -43,7 +45,7 @@
 	// Release anything that's not essential, such as cached data.
 }
 
-- (void)initializeDatabase {
+- (void)initializeApplicationDatabase {
   NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
   NSString *documentsDirectory = [paths objectAtIndex:0];
   if (!documentsDirectory) {
@@ -53,10 +55,10 @@
     NSLog(@"Documents directory found: %@", documentsDirectory);
   }
   
-  NSString *applicationDatabasePath = [documentsDirectory stringByAppendingPathComponent:@"data.db"];
+  NSString *applicationDatabasePath = [documentsDirectory stringByAppendingPathComponent:@"Library_MobileAdium_mobile_adium.db"];
   NSLog(@"Application database path: %@", applicationDatabasePath);
   
-  SQLite3Database *applicationDatabase = [SQLite3Database databaseWithPath:applicationDatabasePath];
+  applicationDatabase = [MADatabase databaseWithPath:applicationDatabasePath];
   if (![applicationDatabase open]) {
     NSLog(@"Could not open application database.");
     return;
@@ -82,10 +84,8 @@
   self.viewControllers = [NSArray arrayWithObjects:accountsNavigationController, contactListNavigationController, nil];
 }
 
-- (void)dealloc
-{
-	[super dealloc];
++ (MADatabase *)applicationDatabase {
+  return applicationDatabase;
 }
-
 
 @end

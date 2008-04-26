@@ -1,18 +1,18 @@
 //
-//  SQLite3Database.m
+//  MADatabase.m
 //  MobileAdium
 //
 //  Created by Ngan Pham on 4/24/08.
 //  Copyright 2008 __MyCompanyName__. All rights reserved.
 //
 
-#import "SQLite3Database.h"
-#import "SQLite3ResultSet.h"
+#import "MADatabase.h"
+#import "MAResultSet.h"
 
-@implementation SQLite3Database
+@implementation MADatabase
 
 + (id)databaseWithPath:(NSString *)aPath {
-    return [[[SQLite3Database alloc] initWithPath:aPath] autorelease];
+    return [[[MADatabase alloc] initWithPath:aPath] autorelease];
 }
 
 - (id)initWithPath:(NSString *)aPath {
@@ -68,7 +68,7 @@
             retry = YES;
             usleep(20);
             if (busyRetryTimeout && (numberOfRetries++ > busyRetryTimeout)) {
-                [NSException raise:@"SQLite3DatabaseException" format:@"Database too busy."];
+                [NSException raise:@"MADatabaseException" format:@"Database too busy."];
             }
         }
         else if (SQLITE_OK != rc) {
@@ -113,7 +113,7 @@
         return NO;
     }
     
-    SQLite3ResultSet *rs = [self executeQuery:@"select name from sqlite_master where type='table'"];
+    MAResultSet *rs = [self executeQuery:@"select name from sqlite_master where type='table'"];
     
     if (rs) {
         [rs close];
@@ -124,10 +124,10 @@
 }
 
 - (void) compainAboutInUse {
-    NSLog(@"The SQLite3Database %@ is currently in use.", self);
+    NSLog(@"The MADatabase %@ is currently in use.", self);
     
     if (crashOnErrors) {
-        [NSException raise:@"SQLite3Database in use" format:@"The SQLite3Database %@ is currently in use.", self];
+        [NSException raise:@"MADatabase in use" format:@"The MADatabase %@ is currently in use.", self];
     }
     
 }
@@ -199,7 +199,7 @@
     }
     [self setInUse:YES];
     
-    SQLite3ResultSet *rs = nil;
+    MAResultSet *rs = nil;
     
     NSString *sql = objs;
     int rc;
@@ -220,7 +220,7 @@
             usleep(20);
             
             if (busyRetryTimeout && (numberOfRetries++ > busyRetryTimeout)) {
-                [NSException raise:@"SQLite3DatabaseException" format:@"Database too busy."];
+                [NSException raise:@"MADatabaseException" format:@"Database too busy."];
             }
         }
         else if (SQLITE_OK != rc) {
@@ -231,7 +231,7 @@
                 NSLog(@"DB Error: %d \"%@\"", [self lastErrorCode], [self lastErrorMessage]);
                 NSLog(@"DB Query: %@", sql);
                 if (crashOnErrors) {
-                    [NSException raise:@"SQLite3DatabaseException" format:@"(%d) \"%@\"", [self lastErrorCode], [self lastErrorMessage]];
+                    [NSException raise:@"MADatabaseException" format:@"(%d) \"%@\"", [self lastErrorCode], [self lastErrorMessage]];
 #ifdef __BIG_ENDIAN__
                     asm{ trap };
 #endif
@@ -272,7 +272,7 @@
     }
     
     // the statement gets close in rs's dealloc or [rs close];
-    rs = [SQLite3ResultSet resultSetWithStatement:pStmt usingParentDatabase:self];
+    rs = [MAResultSet resultSetWithStatement:pStmt usingParentDatabase:self];
     [rs setQuery:sql];
     
     return rs;
@@ -304,7 +304,7 @@
             retry = YES;
             usleep(20);
             if (busyRetryTimeout && (numberOfRetries++ > busyRetryTimeout)) {
-                [NSException raise:@"SQLite3DatabaseException" format:@"Database too busy."];
+                [NSException raise:@"MADatabaseException" format:@"Database too busy."];
             }
         }
         else if (SQLITE_OK != rc) {
@@ -315,7 +315,7 @@
                 NSLog(@"DB Error: %d \"%@\"", [self lastErrorCode], [self lastErrorMessage]);
                 NSLog(@"DB Query: %@", sql);
                 if (crashOnErrors) {
-                    [NSException raise:@"SQLite3DatabaseException" format:@"(%d) \"%@\"", [self lastErrorCode], [self lastErrorMessage]];
+                    [NSException raise:@"MADatabaseException" format:@"(%d) \"%@\"", [self lastErrorCode], [self lastErrorMessage]];
                     #ifdef __BIG_ENDIAN__
                     asm{ trap };
                     #endif
@@ -372,7 +372,7 @@
             retry = YES;
             usleep(20);
             if (busyRetryTimeout && (numberOfRetries++ > busyRetryTimeout)) {
-                [NSException raise:@"SQLite3DatabaseException" format:@"Database too busy."];
+                [NSException raise:@"MADatabaseException" format:@"Database too busy."];
             }
         }
         else if (SQLITE_DONE == rc || SQLITE_ROW == rc) {

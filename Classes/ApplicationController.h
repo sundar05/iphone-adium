@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@class AccountsNavigationController, ContactListNavigationController, ProfileNavigationController, SettingsNavigationController;
+@class AccountsNavigationController;
+@class ContactListNavigationController;
+@class ProfileNavigationController;
+@class SettingsNavigationController;
+@class MADatabase;
 
 @interface ApplicationController : UITabBarController {
   IBOutlet AccountsNavigationController *accountsNavigationController;
@@ -22,7 +26,9 @@
 @property (nonatomic, retain) ProfileNavigationController *profileNavigationController;
 @property (nonatomic, retain) SettingsNavigationController *settingsNavigationController;
 
-- (void)initializeDatabase;
+- (void)initializeApplicationDatabase;
 - (void)initializeNavigationControllers;
+
++ (MADatabase *)applicationDatabase;
 
 @end

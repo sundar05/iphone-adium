@@ -1,26 +1,26 @@
 //
-//  SQLite3ResultSet.m
+//  MAResultSet.m
 //  MobileAdium
 //
 //  Created by Ngan Pham on 4/24/08.
 //  Copyright 2008 __MyCompanyName__. All rights reserved.
 //
 
-#import "SQLite3ResultSet.h"
-#import "SQLite3Database.h"
+#import "MAResultSet.h"
+#import "MADatabase.h"
 
-@interface SQLite3ResultSet (Private)
+@interface MAResultSet (Private)
 
 - (NSMutableDictionary *)columnNameToIndexMap;
 - (void)setColumnNameToIndexMap:(NSMutableDictionary *)value;
 
 @end
 
-@implementation SQLite3ResultSet
+@implementation MAResultSet
 
-+ (id) resultSetWithStatement:(sqlite3_stmt *)stmt usingParentDatabase:(SQLite3Database *)aDB; {
++ (id) resultSetWithStatement:(sqlite3_stmt *)stmt usingParentDatabase:(MADatabase *)aDB; {
     
-    SQLite3ResultSet *rs = [[SQLite3ResultSet alloc] init];
+    MAResultSet *rs = [[MAResultSet alloc] init];
     
     [rs setPStmt:stmt];
     [rs setParentDB:aDB];
@@ -117,7 +117,7 @@
             usleep(20);
             
             if ([parentDB busyRetryTimeout] && (numberOfRetries++ > [parentDB busyRetryTimeout])) {
-                [NSException raise:@"SQLite3DatabaseException" format:@"Database too busy."];
+                [NSException raise:@"MADatabaseException" format:@"Database too busy."];
             }
             
         }
@@ -290,7 +290,7 @@
     pStmt = newsqlite3_stmt;
 }
 
-- (void)setParentDB:(SQLite3Database *)newDb;{
+- (void)setParentDB:(MADatabase *)newDb;{
     parentDB = newDb;
 }
 

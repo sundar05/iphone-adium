@@ -1,5 +1,5 @@
 //
-//  SQLite3Database.h
+//  MADatabase.h
 //  MobileAdium
 //
 //  Created by Ngan Pham on 4/24/08.
@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "sqlite3.h"
-#import "SQLite3ResultSet.h"
+#import "MAResultSet.h"
 
-@interface SQLite3Database : NSObject {
+@interface MADatabase : NSObject {
 	sqlite3* db;
 	NSString* databasePath;
   BOOL logsErrors;
