@@ -22,7 +22,7 @@
 @property (nonatomic, retain) ProfileNavigationController *profileNavigationController;
 @property (nonatomic, retain) SettingsNavigationController *settingsNavigationController;
 
-- (void)initializeCoreControllers;
 - (void)initializeDatabase;
+- (void)initializeNavigationControllers;
 
 @end
