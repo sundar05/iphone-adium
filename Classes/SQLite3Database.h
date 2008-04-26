@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "sqlite3.h"
+#import "SQLite3ResultSet.h"
 
 @interface SQLite3Database : NSObject {
 	sqlite3* db;
