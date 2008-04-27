@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#define APPLICATION_DATABASE_FILENAME @"Library_MobileAdium_mobile_adium.db"
+
 @class AccountsNavigationController;
 @class ContactListNavigationController;
 @class ProfileNavigationController;
@@ -26,9 +28,12 @@
 @property (nonatomic, retain) ProfileNavigationController *profileNavigationController;
 @property (nonatomic, retain) SettingsNavigationController *settingsNavigationController;
 
+- (void)initializeCore;
 - (void)initializeApplicationDatabase;
+- (void)verifyApplicationDatabaseIntegrity;
 - (void)initializeNavigationControllers;
 
 + (MADatabase *)applicationDatabase;
++ (BOOL)initializing;
 
 @end

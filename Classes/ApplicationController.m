@@ -12,10 +12,13 @@
 #import "ProfileNavigationController.h"
 #import "SettingsNavigationController.h"
 #import "MADatabase.h"
+#import "MADatabaseSchemaHelper.h"
 
 @implementation ApplicationController
 
+static NSString *documentsDirectory;
 static MADatabase *applicationDatabase;
+static BOOL initializing;
 
 @synthesize accountsNavigationController;
 @synthesize contactListNavigationController;
@@ -25,10 +28,13 @@ static MADatabase *applicationDatabase;
 - (id)init
 {
 	if (self = [super init]) {
-		// Initialize your application controller.
-		self.title = @"ApplicationController";
+		// Initialize the application controller.
+    initializing = YES;
+    [self initializeCore];
     [self initializeApplicationDatabase];
+    [self verifyApplicationDatabaseIntegrity];
 		[self initializeNavigationControllers];
+    initializing = NO;
 	}
 	return self;
 }
@@ -45,29 +51,39 @@ static MADatabase *applicationDatabase;
 	// Release anything that's not essential, such as cached data.
 }
 
-- (void)initializeApplicationDatabase {
-  NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-  NSString *documentsDirectory = [paths objectAtIndex:0];
+- (void)initializeCore {
+  // resolve documents directory
+  NSArray *domainPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+  documentsDirectory = [domainPaths objectAtIndex:0];
   if (!documentsDirectory) {
     NSLog(@"Documents directory not found.");
     return;
   } else {
     NSLog(@"Documents directory found: %@", documentsDirectory);
   }
-  
-  NSString *applicationDatabasePath = [documentsDirectory stringByAppendingPathComponent:@"Library_MobileAdium_mobile_adium.db"];
+}
+
+- (void)initializeApplicationDatabase {  
+  // build the application database path
+  NSString *applicationDatabasePath = [documentsDirectory stringByAppendingPathComponent:APPLICATION_DATABASE_FILENAME];
   NSLog(@"Application database path: %@", applicationDatabasePath);
   
+  // instantiate the application database
   applicationDatabase = [MADatabase databaseWithPath:applicationDatabasePath];
   if (![applicationDatabase open]) {
     NSLog(@"Could not open application database.");
     return;
   }
-  // create a bad statement, just to test the error code.
-  int err = [applicationDatabase executeUpdate:@"blah blah blah"];
-  if (err) {
-    NSLog(@"Err %d: %@", [applicationDatabase lastErrorCode], [applicationDatabase lastErrorMessage]);
+}
+
+- (void)verifyApplicationDatabaseIntegrity {
+  //[applicationDatabase executeUpdate:[MADatabaseSchemaHelper schemaFor:MA_DATABASE_SCHEMA_HELPER_SERVICES]];
+  MAResultSet *rs = [applicationDatabase executeQuery:@"SELECT name FROM sqlite_master WHERE type = 'table'"];
+  NSLog(@"Looking for tables...");
+  while ([rs next]) {
+    NSLog(@"Table: %@", [rs stringForColumn:@"name"]);
   }
+  [rs close];
 }
 
 - (void)initializeNavigationControllers {
@@ -86,6 +102,9 @@ static MADatabase *applicationDatabase;
 
 + (MADatabase *)applicationDatabase {
   return applicationDatabase;
+}
++ (BOOL)initializing {
+  return initializing;
 }
 
 @end

@@ -19,6 +19,7 @@
 @property (nonatomic, retain) ApplicationController *applicationController;
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application;
+- (void)applicationWillTerminate:(UIApplication *)application;
 - (void)dealloc;
 
 @end
