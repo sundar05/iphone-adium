@@ -123,13 +123,13 @@
     return NO;
 }
 
-- (void) compainAboutInUse {
-    NSLog(@"The MADatabase %@ is currently in use.", self);
-    
-    if (crashOnErrors) {
-        [NSException raise:@"MADatabase in use" format:@"The MADatabase %@ is currently in use.", self];
-    }
-    
+- (void) complainAboutInUse:(NSString *)sql {
+  //NSLog(@"The MADatabase %@ is currently in use.", self);
+  NSLog(@"The MADatabase %@ is currently in use.  Query: %@", self, sql);
+  
+  if (crashOnErrors) {
+    [NSException raise:@"MADatabase in use" format:@"The MADatabase %@ is currently in use.", self];
+  }    
 }
 
 - (NSString *) lastErrorMessage {
@@ -147,7 +147,7 @@
 - (sqlite_int64) lastInsertRowId {
     
     if (inUse) {
-        [self compainAboutInUse];
+        [self complainAboutInUse:@"lastInsertRowId"];
         return NO;
     }
     [self setInUse:YES];
@@ -194,7 +194,7 @@
 - (id) executeQuery:(NSString *)objs, ... {
     
     if (inUse) {
-        [self compainAboutInUse];
+        [self complainAboutInUse:objs];
         return nil;
     }
     [self setInUse:YES];
@@ -282,7 +282,7 @@
 - (BOOL) executeUpdate:(NSString *)objs, ... {
     
     if (inUse) {
-        [self compainAboutInUse];
+        [self complainAboutInUse:objs];
         return NO;
     }
     [self setInUse:YES];
