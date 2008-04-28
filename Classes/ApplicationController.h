@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-#define APPLICATION_DATABASE_FILENAME @"Library_MobileAdium_mobile_adium.db"
-
 @class AccountsNavigationController;
 @class ContactListNavigationController;
 @class ProfileNavigationController;

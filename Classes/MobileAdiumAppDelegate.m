@@ -27,6 +27,9 @@
 	[window makeKeyAndVisible];
 }
 
+- (void)applicationWillTerminate:(UIApplication *)application {
+}
+
 - (void)dealloc {
 	[applicationController release];
 	[window release];

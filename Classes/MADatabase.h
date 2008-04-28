@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "sqlite3.h"
+#import <sqlite3.h>
 #import "MAResultSet.h"
 
 @interface MADatabase : NSObject {
-	sqlite3* db;
-	NSString* databasePath;
+	sqlite3 *db;
+	NSString *databasePath;
   BOOL logsErrors;
   BOOL crashOnErrors;
   BOOL inUse;
