@@ -29,6 +29,12 @@
 		4B4AE80F0DC0EB960095A099 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B4AE80E0DC0EB960095A099 /* Icon.png */; };
 		4BA5930D0DC1543800CC131E /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BA5930A0DC1543800CC131E /* sqlite3.c */; };
 		4BA5931A0DC1552A00CC131E /* MADatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA593190DC1552A00CC131E /* MADatabase.m */; };
+		4BC315540DC64B180007680B /* libgmodule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BC3154E0DC64B180007680B /* libgmodule.framework */; };
+		4BC315550DC64B180007680B /* libgobject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BC3154F0DC64B180007680B /* libgobject.framework */; };
+		4BC315560DC64B180007680B /* libgthread.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BC315500DC64B180007680B /* libgthread.framework */; };
+		4BC315570DC64B180007680B /* libintl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BC315510DC64B180007680B /* libintl.framework */; };
+		4BC315580DC64B180007680B /* libpurple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BC315520DC64B180007680B /* libpurple.framework */; };
+		4BC315C40DC64C1A0007680B /* libglib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BC315C30DC64C1A0007680B /* libglib.framework */; };
 		4BC419770DC276B2002D883F /* Accounts.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BC419760DC276B2002D883F /* Accounts.png */; };
 		4BC419880DC28526002D883F /* Contact List.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BC419870DC28526002D883F /* Contact List.png */; };
 /* End PBXBuildFile section */
@@ -74,6 +80,12 @@
 		4BA5930C0DC1543800CC131E /* sqlite3ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3ext.h; sourceTree = "<group>"; };
 		4BA593180DC1552A00CC131E /* MADatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADatabase.h; sourceTree = "<group>"; };
 		4BA593190DC1552A00CC131E /* MADatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADatabase.m; sourceTree = "<group>"; };
+		4BC3154E0DC64B180007680B /* libgmodule.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libgmodule.framework; sourceTree = "<group>"; };
+		4BC3154F0DC64B180007680B /* libgobject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libgobject.framework; sourceTree = "<group>"; };
+		4BC315500DC64B180007680B /* libgthread.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libgthread.framework; sourceTree = "<group>"; };
+		4BC315510DC64B180007680B /* libintl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libintl.framework; sourceTree = "<group>"; };
+		4BC315520DC64B180007680B /* libpurple.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libpurple.framework; sourceTree = "<group>"; };
+		4BC315C30DC64C1A0007680B /* libglib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libglib.framework; sourceTree = "<group>"; };
 		4BC419760DC276B2002D883F /* Accounts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Accounts.png; sourceTree = "<group>"; };
 		4BC419870DC28526002D883F /* Contact List.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Contact List.png"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
@@ -87,6 +99,12 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				1D3623EC0D0F72F000981E51 /* CoreGraphics.framework in Frameworks */,
+				4BC315540DC64B180007680B /* libgmodule.framework in Frameworks */,
+				4BC315550DC64B180007680B /* libgobject.framework in Frameworks */,
+				4BC315560DC64B180007680B /* libgthread.framework in Frameworks */,
+				4BC315570DC64B180007680B /* libintl.framework in Frameworks */,
+				4BC315580DC64B180007680B /* libpurple.framework in Frameworks */,
+				4BC315C40DC64C1A0007680B /* libglib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,11 +169,17 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4BC315C30DC64C1A0007680B /* libglib.framework */,
+				4BC3154E0DC64B180007680B /* libgmodule.framework */,
+				4BC3154F0DC64B180007680B /* libgobject.framework */,
+				4BC315500DC64B180007680B /* libgthread.framework */,
+				4BC315510DC64B180007680B /* libintl.framework */,
+				4BC315520DC64B180007680B /* libpurple.framework */,
 				1D3623EB0D0F72F000981E51 /* CoreGraphics.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 			);
-			name = Frameworks;
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 		4B1242060DC25A4C0063FC57 /* Accounts */ = {
