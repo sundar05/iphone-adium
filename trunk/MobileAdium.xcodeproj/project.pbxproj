@@ -114,7 +114,6 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				4B2849880DC18BB100BCB3D2 /* libpurple */,
 				4BA593090DC1542200CC131E /* SQLite3 */,
 				4B13AC710DC4498A0072F5DC /* Helpers */,
 				4B4AE7C20DC0EA2D0095A099 /* Models */,
@@ -231,13 +230,6 @@
 				4B13AC770DC449C40072F5DC /* MADatabaseSchemaHelper.m */,
 			);
 			name = Helpers;
-			sourceTree = "<group>";
-		};
-		4B2849880DC18BB100BCB3D2 /* libpurple */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = libpurple;
 			sourceTree = "<group>";
 		};
 		4B4AE7C20DC0EA2D0095A099 /* Models */ = {
