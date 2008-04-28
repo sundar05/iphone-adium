@@ -14,6 +14,8 @@
 #import "MADatabase.h"
 #import "MADatabaseSchemaHelper.h"
 
+#define APPLICATION_DATABASE_FILENAME @"Library_MobileAdium_mobile_adium.db"
+
 @implementation ApplicationController
 
 static NSString *documentsDirectory;
@@ -65,6 +67,7 @@ static BOOL initializing;
 
 - (void)initializeApplicationDatabase {  
   // build the application database path
+  /*
   NSString *applicationDatabasePath = [documentsDirectory stringByAppendingPathComponent:APPLICATION_DATABASE_FILENAME];
   NSLog(@"Application database path: %@", applicationDatabasePath);
   
@@ -74,16 +77,19 @@ static BOOL initializing;
     NSLog(@"Could not open application database.");
     return;
   }
+  */
 }
 
 - (void)verifyApplicationDatabaseIntegrity {
-  //[applicationDatabase executeUpdate:[MADatabaseSchemaHelper schemaFor:MA_DATABASE_SCHEMA_HELPER_SERVICES]];
+  /*
+  [applicationDatabase executeUpdate:[MADatabaseSchemaHelper schemaFor:MA_DATABASE_SCHEMA_HELPER_SERVICES]];
   MAResultSet *rs = [applicationDatabase executeQuery:@"SELECT name FROM sqlite_master WHERE type = 'table'"];
   NSLog(@"Looking for tables...");
   while ([rs next]) {
     NSLog(@"Table: %@", [rs stringForColumn:@"name"]);
   }
   [rs close];
+  */
 }
 
 - (void)initializeNavigationControllers {
